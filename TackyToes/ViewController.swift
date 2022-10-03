@@ -68,60 +68,6 @@ class ViewController: UIViewController {
 
         
         let result = checkWin()
-               
-               if result != gameContinue {
-                   
-                   
-                   againBtn.isHidden = false
-                   
-                   rotatedLabel.text = "PLAYER \(result) HAS WON"
-                   upsideLabel.text = "PLAYER \(result) HAS WON"
-               }
-               
-               // Checking if its a tie
-               var count = 0
-               
-               for i in board {
-                   if i != 0 {
-                       count += 1
-                       
-                       if count > 8 && result != 1 && result != 2 {
-                           
-                           
-                           againBtn.isHidden = false
-                           
-                          
-                           rotatedLabel.text = "You Both Lose"
-                           upsideLabel.text = "You Both Lose"
-                       }
-                   }
-               }
-               
-           }
-    
-    
-    @IBAction func againBtnPressed(_ sender: UIButton) {
-        
-       playAgain()
-        
-        
-    }
-    
-    
-    func playAgain() {
-        board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-        player = 1
-        
-        for box in boxes {
-            box.setTitle("", for: .normal)
-        
-        }
-        rotatedLabel.text = "Your Turn"
-        
-        againBtn.isHidden = true
-        
-    }
-    
         
         func checkWin() -> Int {
             
@@ -176,6 +122,76 @@ class ViewController: UIViewController {
             return gameContinue
         }
         
+        //checking if nobody won/tie
+        
+        var count = 0
+        
+        for box in board {
+            if box != 0 {
+                count += 1
+                
+                if count > 8 && result != 1 && result != 2 {
+                    
+                    displayResult(resultText: "You Both Lose")
+
+                }
+            }
+        }
+        
+        
+               
+               if result != gameContinue {
+                   
+                   displayResult(resultText: "PLAYER \(result) HAS WON")
+                   
+
+               }
+               
+        
+              
+               
+           }
+    
+    
+    @IBAction func againBtnPressed(_ sender: UIButton) {
+        
+       playAgain()
+        
+        
+    }
+    
+    
+
+    
+    //Displays the result on the labels and shows the again btn
+    
+    func displayResult(resultText : String) {
+        
+        againBtn.isHidden = false
+        rotatedLabel.text = resultText
+        upsideLabel.text = resultText
+        
+        
+        
+    }
+    
+    //Sets board to clear again and hides again btn.
+    
+    func playAgain() {
+        board = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        player = 1
+        
+        for box in boxes {
+            box.setTitle("", for: .normal)
+        
+        }
+        rotatedLabel.text = "Your Turn"
+        
+        againBtn.isHidden = true
+        
+    }
+        
+       
         
         
 
