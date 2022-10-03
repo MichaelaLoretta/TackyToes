@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C9D45AA28EB0015000F34C0 /* gradient2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4C9D45A928EB0015000F34C0 /* gradient2.jpeg */; };
 		4CEE935D28EAFF020064E460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE935C28EAFF020064E460 /* AppDelegate.swift */; };
 		4CEE935F28EAFF020064E460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE935E28EAFF020064E460 /* SceneDelegate.swift */; };
 		4CEE936128EAFF020064E460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE936028EAFF020064E460 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C9D45A928EB0015000F34C0 /* gradient2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gradient2.jpeg; path = ../../Luffarschack/Luffarschack/Assets.xcassets/gradient2.jpeg; sourceTree = "<group>"; };
 		4CEE935928EAFF020064E460 /* TackyToes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TackyToes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEE935C28EAFF020064E460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CEE935E28EAFF020064E460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				4CEE936028EAFF020064E460 /* ViewController.swift */,
 				4CEE936228EAFF020064E460 /* Main.storyboard */,
 				4CEE936528EAFF030064E460 /* Assets.xcassets */,
+				4C9D45A928EB0015000F34C0 /* gradient2.jpeg */,
 				4CEE936728EAFF030064E460 /* LaunchScreen.storyboard */,
 				4CEE936A28EAFF030064E460 /* Info.plist */,
 			);
@@ -233,6 +236,7 @@
 			files = (
 				4CEE936928EAFF030064E460 /* LaunchScreen.storyboard in Resources */,
 				4CEE936628EAFF030064E460 /* Assets.xcassets in Resources */,
+				4C9D45AA28EB0015000F34C0 /* gradient2.jpeg in Resources */,
 				4CEE936428EAFF020064E460 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,8 +446,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,8 +472,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
